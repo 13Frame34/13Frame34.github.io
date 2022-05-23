@@ -130,20 +130,20 @@ nav .fa{
     font-size: 30px;
 }
 .about h2{
-        color: #fff;
-        text-align: center;
-        padding: 0px 10%;
-        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123),
-        -5px -5px 5px rgba(17, 15, 15, 0.123);
-        font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 10%;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123),
+    -5px -5px 5px rgba(17, 15, 15, 0.123);
+    font-size: 20px;
 }
 .about p{
-        color: #fff;
-        text-align: center;
-        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123),
-        -5px -5px 5px rgba(17, 15, 15, 0.123);
-        padding: 5px 10%;
-        font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123),
+    -5px -5px 5px rgba(17, 15, 15, 0.123);
+    padding: 5px 10%;
+    font-size: 20px;
 }
 
 .about-texts{
@@ -278,6 +278,29 @@ nav .fa{
         font-size: 15px;
     }
 
+    .show-div h1 {
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123),
+            -5px -5px 5px rgba(17, 15, 15, 0.123);
+        font-size: 30px;
+    }
+    
+    .show-div img {
+        border-radius: 20px;
+        width: 120px;
+        margin: 20px;
+        transition: 70ms;
+        box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.534);
+    }
+
+    .show-div img:hover {
+        width: 130px;
+        transition: 120ms;
+        margin: 15px;
+    }
+    
     .contact {
         background-color: rgb(19, 20, 29);
         min-height: 200%;
