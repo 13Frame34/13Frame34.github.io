@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13Frame34</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="home"></div>
+    <section class="header">
+      <nav id="navs">
+        <h2 class="logo">13Frame34</h2>
+        <div class="nav-link" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#showcase">Textures</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Hi I'm a 13Frame34!</h1>
+        <h2>Free CC0 Textures here!</h2>
+      </div>
+    </section>
+    <section class="showcase">
+      <div class="show-div">
+        <h1 id="showcase">Textures</h1>
+        <a href="https://drive.google.com/file/d/1mWMcp31lA3rv5DQopdXtJTe4xqFopvgy/view?usp=sharing">
+          <img src="./images/grid01/ground.png" alt="grid01">
+        </a>
+      </div>
+    </section>
+    <section class="about">
+      <h1 id="about">About</h1>
+      <div class="texts">
+        <h2>Hi! I'm 13Frame34.</h2>
+        <p>I make video games and apps!</p>
+        <p>PS: I'm terrible at making websites :(</p>
+      </div>
+    </section>
+    <section class="contact">
+      <h1 id="contact">Contact</h1>
+      <p>Email: 13Frame34@gmail.com</p>
+      <p>Discord: Gee-Hoi#7327</p>
+    </section>
+    <section class="cpyr">
+      <h1>Copyright 2022 13Frame34</h1>
+    </section>
+
+    <!--toggle menus-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      window.onscroll = function () {
+        scrollStick();
+      };
+      var navbar = document.getElementById("navs");
+      var sticky = navbar.offsetTop;
+      function scrollStick() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
