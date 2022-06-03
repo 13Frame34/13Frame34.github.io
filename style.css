@@ -242,13 +242,12 @@ nav .fa{
         cursor: pointer;
     }
     .showcase{
-        min-height: 165vh;
+        min-height: 40vh;
         width: 100%;
         background-color:rgba(4, 9, 30, 0.925);
         background-position: center;
         background-size: cover;
         position: relative;
-        min-height: 1100px;
     }
 
     .nav-link  ul {
